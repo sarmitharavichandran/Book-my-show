@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel="stylesheet" href="2d4.css" media="all"/>
+</head>
+<body>
+
+<div class="ex"><font color="blue"><b><a href="mainsub2.html">PREVIOUS PAGE</font></b></div></a>
+  <img class="mySlides" src="bms.jpg" style="width:100%;height:80%">
+  <img class="mySlides" src="kabil.jpg"style="width:100%;height:80%">
+  <img class="mySlides" src="adhm.jpg" style="width:100%;height:80%">
+  <img class="mySlides" src="phil.jpg" style="width:100%;height:80%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+<div><button class="button"><a href="kns.html">Book Now</button></a></div>
+<div class="img1"><img src="kabil.jpg"></div>
+<div class="txt"><b>Movie Name:Kaabil<br>Directed by:Sanjay Gupta<br>Produced by:Rakesh Roshan<br>Written by:Sanjay Masoom<br>Starring:Hrithik Roshan,Yami Gautam<br>
+Music by:Rajesh Roshan<br>Running Time:139 min<br>Language:Hindi<br></b></div>
+<div><button class="button2"><a href="adhm.html">Book Now</button></a></div>
+<div class="img2"><img src="adhm.jpg"></div>
+<div class="txt1"><b>Movie Name:Raes<br>Directed by:Rahul Dholakia<br>Produced by:Ritesh Sidhwani,Farhan Akhtar,Gauri Khan<br>Written by:Rahul Dholakia,Harit Mehta,Ashish Vashi
+Niraj Shukla<br>Starring:Shah Rukh Khan,Mahira Khan,Nawazuddin Siddiqui&many<br>
+Music by:Ram Sampath<br>Running Time:142 min<br>Language:Hindi<br></b></div>
+<div><button class="button3"><a href="pk.html">Book Now</button></a></div>
+
+<div class="img3"><img src="phil.jpg"></div>
+<div class="txt2"><b>Movie Name:Phillauri<br>Directed by:Anshai Lal<br>Produced by:	Anushka Sharma,Karnesh Sharma,Fox Star Studios<br>Written by:Anvita Dutt<br>Starring:Anushka Sharma,Diljit Dosanjh  &Many<br>
+Music by:Shashwat Sachdev<br>Running Time:139 min<br>Language:Hindi<br></b></div>
+
+
+</body>
+</html>

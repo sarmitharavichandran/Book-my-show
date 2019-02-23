@@ -1,0 +1,47 @@
+<html>
+<head>
+<link rel="stylesheet" href="2d3.css" media="all"/>
+</head>
+<body>
+<div class="ex"><font color="blue"><b><a href="mainsub2.html">PREVIOUS PAGE</font></b></div></a>
+ <img class="mySlides" src="bms.jpg" style="width:100%;height:80%">
+  <img class="mySlides" src="telugu2.jpg"style="width:100%;height:80%">
+  <img class="mySlides" src="telugu1.jpg" style="width:100%;height:80%">
+  <img class="mySlides" src="telugu3.jpg" style="width:100%;height:80%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+<div><button class="button"><a href="sar.html">Book Now</button></a></div>
+
+
+<div class="img1"><img src="telugu2.jpg"></div>
+<div class="txt"><b>Directed by:S.S.Rajamouli<br>Produced by:B.V.S.N.Prasad<br>Written by:M.Rathnam<br>Starring:Prabas,Anushka <br>
+Music by:M.M.Keeravani<br>Running Time:166 min<br>Language:Telugu<br></b></div>
+<div><button class="button2"><a href="mahadeera.html">BookNow</button></a></div>
+<div class="img2"><img src="telugu1.jpg"></div>
+<div class="txt1"><b>Directed by:Mani Rathnam<br>Produced by:Sharrath Marar<br>Written by:Pawan Kalyan<br>Starring:Karthi,Adhiti rao<br>
+Music by:Devi Sri Prasad<br>Running Time:164min<br>Language:Telugu<br></b></div>
+<div><button class="button3"><a href="sos.html">Book Now</button></a></div>
+<div class="img3"><img src="telugu3.jpg"></div>
+<div class="txt2"><b>Directed by:Trivikram Srinivas<br>Produced by:S.Radha Krishna<br>Written by:Trivikram Srinivas<br>Starring:Nani,Keerthi suresh&Many<br>
+Music by:<br>Running Time:min<br>Language:Telugu<br></b></div>
+</body>
+</html>

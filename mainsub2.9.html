@@ -1,0 +1,42 @@
+<html>
+<head>
+<link rel="stylesheet" href="2d5.css" media="all"/>
+
+</head>
+<body>
+<div class="ex"><font color="blue"><b><a href="moviespage1.html">PREVIOUS PAGE</font></b></div></a>
+<img class="mySlides" src="bms.jpg" style="width:70%;height:80%">
+  <img class="mySlides" src="si.jpg" style="width:70%;height:80%">
+  <img class="mySlides" src="bms.jpg" style="width:70%;height:80%">
+  <img class="mySlides" src="bb.jpg" style="width:70%;height:80%">
+</div>
+<script>
+var myIndex = 0;
+animation();
+
+function animation() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(animation, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+<div><button class="button"><a href="twlight.html">Book Now</button></a></div>
+<div class="img1"><img src="si.jpg"></div>
+<div class="txt"><b>Movie Name:Kong Skul Island<br>Directed by:Jordan Vogt-Roberts<br>Produced by:Warner Bros<br>Written by:Dan Gibroy,Max Borenstein,Derek Connolly<br>Starring:Tom Hiddleston,Brie Larson&Many<br>
+Music by:Henry Jackman<br>Running Time:99 min<br>Language:English<br></b></div>
+<div><button class="button1"><a href="step.html">Book Now</button></a></div>
+<div class="img2"><img src="bb.jpg"></div>
+<div class="txt1"><b>Movie Name:Beauty and The Beast<br>Directed by:Bill Condon<br>Produced by:David Hoberman,Todd Lieberman<br>Starring:Kristen Stewart,Robbert Pattinson &Many<br>
+Music by:Alan Menken<br>Running Time:129 min<br>Language:English<br></b></div>
+
+</body>
+</html>

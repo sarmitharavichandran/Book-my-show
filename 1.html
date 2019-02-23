@@ -1,0 +1,26 @@
+<html>
+<head>
+<link rel="stylesheet" href="jss2.css" media="all"/>
+</head>
+<body>
+
+<div><form class="form">
+<h2><b>ENTER THE NO OF TICKETS:</h2></b><input type="number" id="text1" name="textbox2" min="1" max="20" required/>
+<br><br>
+<h2><b>ENTER THE RATE OF TICKET:</h2></b><input type="number" id="text2" name="textbox2" min="40" max="120" required/><br><br><br>
+<h2><b>TOTAL COST OT THE TICKETS:</h2></b><input type="text" id="txtresult" name="textbox3" required/><br><br<br>
+<br><br><br><input type="button" name="click btn" value="DISPLAY" onclick="mul()"><br><br><br>
+<button class="button"><a href="jss3.html"><b>PROCEED</b></button></a>
+<script type="text/javascript">
+function mul()
+{
+var a = parseInt(document.getElementById("text1").value);
+var b = parseInt(document.getElementById("text2").value);
+var result= a * b;
+document.getElementById("txtresult").value = result;
+}
+</script>
+</form></div>
+</body>
+</html>
+ 

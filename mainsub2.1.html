@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel="stylesheet" href="movies.css" media="all"/>
+</head>
+<body>
+
+<div class="ex"><font color="blue"><b><a href="mainsub2.html">PREVIOUS PAGE</font></b></div></a>
+  <img class="mySlides" src="bms.jpg" style="width:100%;height:80%">
+  <img class="mySlides" src="mup.jpg" style="width:100%;height:80%">
+  <img class="mySlides" src="kv.jpg" style="width:100%;height:80%">
+  <img class="mySlides" src="enpt.jpg" style="width:100%;height:80%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+
+
+<div class="img1"><img src="mup.jpg"></div>
+<div class="txt"><b>Movie Name:Mupparimanam<br>Produced by:Pollachi V.Visu,Pollachi Gold V. Kumar<br>Directed by:Adhiroopan<br>Starring:Shanthanu Bhagyaraj
+Srushti Dange<br>
+Music by:G.V.Prakash Kumar<br>Running Time:158 min<br>Language:Tamil<br></b></div>
+<div><button class="button"><a href="aym.html">Book Now</button></a></div>
+<div class="img2"><img src="kv.jpg"></div>
+<div class="txt1"><b>Movie Name:Kaatru Veliyidai<br>Produced by:Mani Ratnam<br>Directed by:Mani Rathnam<br>Starring:karthi,Aditi rao<br>
+Music by:A.R.Rahman<br>Running Time:135 min<br>Language:Tamil<br></b></div>
+<div><button class="button2"><a href="theri.html">Book Now</button></a></div>
+<div class="img3"><img src="enpt.jpg"></div>
+<div class="txt2"><b>Movie Name:Enai Noki Paayum Thota<br>Produced by: P. Madan Gautham Vasudev Menon<br>Directed by by:Gautham Vasudev Menon<br>Starring:Dhanush,Megha Akash<br>
+Music by:Anirudh Ravichander<br>Written by:Thamarai<br>Running Time:148 min<br>Language:Tamil<br></b></div>
+<div><button class="button3"><a href="ved.html">Book Now</button></a></div>
+</body>
+</html>
